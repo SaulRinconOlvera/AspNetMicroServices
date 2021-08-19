@@ -22,13 +22,13 @@ namespace Catalog.API.Repositories
             await _context.Products.Find(p => p.Id == id).FirstOrDefaultAsync();
 
         public async Task<IEnumerable<Product>> GetProductsByNameAsync(string name) {
-            FilterDefinition<Product> filter = Builders<Product>.Filter.ElemMatch(p => p.Name, name);
+            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Name, name);
             return await _context.Products.Find(filter).ToListAsync();
         }
 
         public async Task<IEnumerable<Product>> GetProductsByCategoryAsync(string categoryName)
         {
-            FilterDefinition<Product> filter = Builders<Product>.Filter.ElemMatch(p => p.Category, categoryName);
+            FilterDefinition<Product> filter = Builders<Product>.Filter.Eq(p => p.Category, categoryName);
             return await _context.Products.Find(filter).ToListAsync();
         }
 
