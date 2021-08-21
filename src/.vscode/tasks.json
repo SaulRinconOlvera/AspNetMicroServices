@@ -47,12 +47,12 @@
             "dockerBuild": {
                 "tag": "src:dev",
                 "target": "base",
-                "dockerfile": "${workspaceFolder}/Services/Basket/Basket.API/Dockerfile",
+                "dockerfile": "${workspaceFolder}/Services/Discount/Discount.API/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Services/Basket/Basket.API/Basket.API.csproj"
+                "appProject": "${workspaceFolder}/Services/Discount/Discount.API/Discount.API.csproj"
             }
         },
         {
@@ -63,12 +63,12 @@
             ],
             "dockerBuild": {
                 "tag": "src:latest",
-                "dockerfile": "${workspaceFolder}/Services/Basket/Basket.API/Dockerfile",
+                "dockerfile": "${workspaceFolder}/Services/Discount/Discount.API/Dockerfile",
                 "context": "${workspaceFolder}",
                 "pull": true
             },
             "netCore": {
-                "appProject": "${workspaceFolder}/Services/Basket/Basket.API/Basket.API.csproj"
+                "appProject": "${workspaceFolder}/Services/Discount/Discount.API/Discount.API.csproj"
             }
         },
         {
@@ -79,7 +79,7 @@
             ],
             "dockerRun": {},
             "netCore": {
-                "appProject": "${workspaceFolder}/Services/Basket/Basket.API/Basket.API.csproj",
+                "appProject": "${workspaceFolder}/Services/Discount/Discount.API/Discount.API.csproj",
                 "enableDebugging": true
             }
         },
@@ -91,7 +91,7 @@
             ],
             "dockerRun": {},
             "netCore": {
-                "appProject": "${workspaceFolder}/Services/Basket/Basket.API/Basket.API.csproj"
+                "appProject": "${workspaceFolder}/Services/Discount/Discount.API/Discount.API.csproj"
             }
         }
     ]
